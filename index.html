@@ -24,152 +24,199 @@
 <body>
     <div class="container-fluid">
         <header class="row py-3 fixed-top">
+            <input type="checkbox" class="d-none" id="check">
             <div class="col-6 px-5">
                 <h1 class="fs-3 fw-semibold text-light">Photo<span style="color: #666666;">Gallery</span></h1>
             </div>
-            <div class="col-6 text-end">
-                <a href="" class="m-5 text-decoration-none text-light">Home</a>
-                <a href="" class="m-5 text-decoration-none text-light">Gallery</a>
-                <a href="" class="m-5 text-decoration-none text-light">About</a>
-                <a href="" class="m-5 text-decoration-none text-light">Contact</a>
+            <div class="col-6 text-end px-5" id="nav-section">
+                <div class="d-none d-lg-inline-block">
+                    <a href="" class="mx-3 text-decoration-none text-light">Home</a>
+                    <a href="" class="mx-3 text-decoration-none text-light">Gallery</a>
+                    <a href="" class="mx-3 text-decoration-none text-light">About</a>
+                    <a href="" class="mx-3 text-decoration-none text-light">Contact</a>
+                </div>
+                <label for="check" class="d-lg-none" style="cursor: pointer; display: inline-block;">
+                    <i class="fa-solid fa-bars fs-3" style="color: rgb(255, 255, 255);" id="menu-btn"></i>
+                    <i class="fa-solid fa-xmark fs-3" style="color: rgb(255, 255, 255);" id="close-btn"></i>
+                </label>
             </div>
+            <div class="text-center w-100 py-3 d-md-none" id="menu-sec">
+                <a href="" class="d-block my-2 text-decoration-none text-light">Home</a>
+                <a href="" class="d-block my-2 text-decoration-none text-light">Gallery</a>
+                <a href="" class="d-block my-2 text-decoration-none text-light">About</a>
+                <a href="" class="d-block my-2 text-decoration-none text-light">Contact</a>
+            </div>
+
         </header>
 
-        <section class="mx-3" style="margin-top: 100px;">
+        <section class="mx-3" style="margin-top: 100px;" id="image-sec">
             <div>
                 <!-- Row 1 -->
                 <div class="row">
                     <div class="col-7" style="height: 250px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=1" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=1"
+                            alt="">
                     </div>
                     <div class="col-5" style="height: 250px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=2" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=2"
+                            alt="">
                     </div>
                 </div>
                 <!-- Row 2 -->
                 <div class="row mt-3">
                     <div class="col-3" style="height: 200px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=3" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=3"
+                            alt="">
                     </div>
                     <div class="col-6" style="height: 200px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=4" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=4"
+                            alt="">
                     </div>
                     <div class="col-3" style="height: 200px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=5" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=5"
+                            alt="">
                     </div>
                 </div>
                 <!-- Row 3 -->
                 <div class="row mt-3 g-3">
                     <div class="col-6 row g-3">
                         <div class="col-6" style="height: 300px;">
-                            <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=19" alt="">
+                            <img class="img-fluid w-100 h-100 object-fit-cover"
+                                src="https://picsum.photos/1000?random=19" alt="">
                         </div>
                         <div class="col-6 mt-3" style="height: 300px;">
-                            <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=20" alt="">
+                            <img class="img-fluid w-100 h-100 object-fit-cover"
+                                src="https://picsum.photos/1000?random=20" alt="">
                         </div>
                         <div class="col-6 mt-3" style="height: 300px;">
-                            <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=21" alt="">
+                            <img class="img-fluid w-100 h-100 object-fit-cover"
+                                src="https://picsum.photos/1000?random=21" alt="">
                         </div>
                         <div class="col-6 mt-3" style="height: 300px;">
-                            <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=22" alt="">
+                            <img class="img-fluid w-100 h-100 object-fit-cover"
+                                src="https://picsum.photos/1000?random=22" alt="">
                         </div>
                     </div>
                     <div class="col-6 row ms-2">
                         <div class="col-12 g-4" style="height: 300px;">
-                            <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=23" alt="">
+                            <img class="img-fluid w-100 h-100 object-fit-cover"
+                                src="https://picsum.photos/1000?random=23" alt="">
                         </div>
                         <div class="col-12 mt-3" style="height: 300px;">
-                            <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=24" alt="">
+                            <img class="img-fluid w-100 h-100 object-fit-cover"
+                                src="https://picsum.photos/1000?random=24" alt="">
                         </div>
                     </div>
                 </div>
                 <!-- Row 4 -->
                 <div class="row mt-3">
                     <div class="col-6" style="height: 200px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=6" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=6"
+                            alt="">
                     </div>
                     <div class="col-6" style="height: 200px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=7" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=7"
+                            alt="">
                     </div>
                 </div>
                 <!-- Row 5 -->
                 <div class="row mt-3">
                     <div class="col-7" style="height: 250px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=25" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=25"
+                            alt="">
                     </div>
                     <div class="col-5" style="height: 250px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=26" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=26"
+                            alt="">
                     </div>
                 </div>
 
                 <div class="row mt-3">
                     <div class="col-3" style="height: 500px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=27" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=27"
+                            alt="">
                     </div>
                     <div class="col-6" style="height: 500px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=28" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=28"
+                            alt="">
                     </div>
                     <div class="col-3" style="height: 500px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=29" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=29"
+                            alt="">
                     </div>
                 </div>
 
                 <div class="row mt-3">
                     <div class="col-3" style="height: 200px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=8" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=8"
+                            alt="">
                     </div>
                     <div class="col-3" style="height: 200px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=9" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=9"
+                            alt="">
                     </div>
                     <div class="col-3" style="height: 200px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=10" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=10"
+                            alt="">
                     </div>
                     <div class="col-3" style="height: 200px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=11" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=11"
+                            alt="">
                     </div>
                 </div>
 
                 <div class="row mt-3">
                     <div class="col-6" style="height: 200px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=12" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=12"
+                            alt="">
                     </div>
                     <div class="col-6" style="height: 200px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=13" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=13"
+                            alt="">
                     </div>
                 </div>
 
                 <div class="row mt-3">
                     <div class="col-10" style="height: 200px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=14" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=14"
+                            alt="">
                     </div>
                     <div class="col-2" style="height: 200px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=15" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=15"
+                            alt="">
                     </div>
                 </div>
 
                 <div class="row mt-3">
                     <div class="col-2" style="height: 200px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=16" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=16"
+                            alt="">
                     </div>
                     <div class="col-2" style="height: 200px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=17" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=17"
+                            alt="">
                     </div>
                     <div class="col-8" style="height: 200px;">
-                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=18" alt="">
+                        <img class="img-fluid w-100 h-100 object-fit-cover" src="https://picsum.photos/1000?random=18"
+                            alt="">
                     </div>
                 </div>
             </div>
         </section>
         <hr>
-        <section class="row mt-5">
-            <div class="col-4">
-                <h3 class="fs-4 fw-semibold text-light p-4">Photo<span style="color: #666666;">Gallery</span></h3>
+        <section>
+            <div class="row">
+                <div class="col-12 col-lg-6 m-4 m-md-0 text-center align-content-center">
+                    <h3 class="fs-2 fw-semibold text-light p-0">Photo<span style="color: #666666;">Gallery</span></h3>
+                </div>
+                <div class="col-12 col-lg-6 m-2 m-md-0 text-center">
+                    <h3 class="fs-2 fw-normal text-light p-1">Contact US</h3>
+                    <textarea name="" id="" placeholder="Enter Message Here..."></textarea> <br>
+                    <button class="btn border rounded bg-dark text-light">Sent</button>
+                </div>
             </div>
-            <div class="col-4">
-                <p class="text-center py-4">&copy All Rights Reserved</p>
-            </div>
-            <div class="col-4">
-
+            <div>
+                <p class="text-center py-4">&copy All Rights Reserved 2026</p>
             </div>
         </section>
     </div>
